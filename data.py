@@ -16,6 +16,7 @@ if VERSION_GTE_0_12_0:
     standardize_image = tf.image.per_image_standardization
 else:
     standardize_image = tf.image.per_image_whitening
+#传入标准函数
 
 def data_files(data_dir, subset):
     """Returns a python list of all (sharded) data subset files.
